@@ -13,8 +13,8 @@ import com.example.employee.service.EmployeeJpaService;
     public EmployeeJpaService service;
 
     @GetMapping("/employees")
-    public ArrayList<Employee> getAllEmployees(){
-    return service.getEmployees();
+    public String getAllEmployees(){
+    return "Hello World";
     }
 
     @PostMapping("/employees")
